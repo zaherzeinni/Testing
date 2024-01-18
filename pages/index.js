@@ -23,7 +23,7 @@ function Home() {
 
       <PostForm users={users} />
 
-      <PostList />
+      <PostList posts={posts}  />
     </div>
   );
 }

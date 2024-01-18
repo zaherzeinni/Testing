@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "nanoid";
 import { sub } from "date-fns";
 
+
 const initialState = [
   {
     id: nanoid(8),
@@ -42,12 +43,12 @@ const postSlice = createSlice({
   initialState, // []    state.posts    hayye wasaltne la hon array mobashara dakhila kil data fo2 line 5
   reducers: {
     // All functions here
-
+    // state to access data of slices of branch manager
     PostAdd: (state, action) => {
-      // data
+      // data post object data sent from postForm  //dispatch(postAdd(data))
 
       console.log("action payload", action.payload);
-
+        // push it in the array
       state.push(action.payload);
     },
   },

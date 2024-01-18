@@ -13,18 +13,24 @@ import {
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import { PostAdd } from "../redux/postSlice";
+import { useDispatch } from "react-redux";
+
+
 
 export default function FormPropsTextFields({ users }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
   const [userId, setUserId] = useState("");
+// dispatch to excute the function from redux-toolkit
+const dispatch = useDispatch();
 
   const handleChange = (event) => {
     setUserId(event.target.value);
   };
 
   const onSavePostClicked = (e) => {
+    
     e.preventDefault();
 
     const data = {
@@ -32,16 +38,20 @@ export default function FormPropsTextFields({ users }) {
       title: title,
       content: content,
       userId: userId,
-      date: new Date().toISOString,
+      date: new Date().toISOString(),
+      
     };
 
-    console.log(data);
+    console.log(data,"this is my data");
+    dispatch(PostAdd(data))
     // PostAdd(data)--> action payload
   };
 
   const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
-
+  
+  
   return (
+  
     <Box
       bgcolor={"primary"}
       component="form"
@@ -51,7 +61,7 @@ export default function FormPropsTextFields({ users }) {
       noValidate
       autoComplete="off"
     >
-      {title}
+     
       <div>
         <TextField
           required
@@ -89,7 +99,6 @@ export default function FormPropsTextFields({ users }) {
             ))}
           </Select>
         </FormControl>
-
         <div>
           <Button
             disabled={!canSave}

@@ -19,7 +19,7 @@ const initialState = [
         name:'Omar'
     },
 ]
-// initialState is array of users
+// initialState is array of users    create slice m2assas el feri3 branch manager
 const userSlice = createSlice({
 
     name:'users',
@@ -29,7 +29,7 @@ const userSlice = createSlice({
     }  
 })
 
-//array of users
+//array of users 
 export const selectAllUsers = (state)=>state.users
 
 export default userSlice.reducer
