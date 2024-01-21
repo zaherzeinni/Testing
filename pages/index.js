@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { selectAllUsers } from "../redux/userSlice";
 import { selectAllPosts } from "../redux/postSlice";
 import { useSelector } from "react-redux";
+import TestForm from '../components/testForm'
 
-import PostForm from "../components/postForm";
-import PostList from "../components/postList";
-
+//import PostForm from "../components/postForm";
+//import PostList from "../components/postList";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -14,16 +14,21 @@ function Home() {
   const users = useSelector(selectAllUsers);
   const posts = useSelector(selectAllPosts);
 
+  // get AllData from test branch
+  //const {name ,age} = useSelector((state)=>state.test)
+  const testData = useSelector((state) => state.test);
+  console.log("TESTDATA-->", testData);
+
   useEffect(() => {}, []);
 
   return (
     <div>
-      {posts?.length}
+      <TestForm />
       {/* {users?.length} */}
 
-      <PostForm users={users} />
+      {/* <PostForm users={users} />
 
-      <PostList posts={posts}  />
+      <PostList posts={posts}  /> */}
     </div>
   );
 }
