@@ -163,7 +163,7 @@ const list = [
   
   function handler(req, res) {
     if (req.method === "GET") {
-      // status 200 means good
+      // status 200 means good   ba3tina object {}
       res.status(200).json({
         status: "success",
         data: list,
@@ -188,6 +188,9 @@ const list = [
       });
     }
   }
+
+  export default handler;
+  
   
   
   
