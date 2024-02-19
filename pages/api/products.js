@@ -174,15 +174,12 @@ const list = [
   //data:list ( list is the value of data ) data motghyir list haye value 
 //array feeya data w ana bhot ism yali bade yeh abel el list
 //feene ektob product badal data
-  
-  
-  
     }
    
-    // only GET method allowed           the       POST ,DELETE ,PUT , PATCH  are not allowed
+    // only GET method allowed           the       POST (for fetching data),DELETE ,PUT (for updating data) , PATCH  are not allowed
     else {
         //only    GET    method allowed
-      res.status(405).json({
+        res.status(405).json({
         status: "failed",
         message: "Method not allowed",
       });
