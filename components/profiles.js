@@ -8,15 +8,15 @@ const Profiles = () => {
   const handleClick = (id) => {
     setActiveIndex(id);
     console.log("active index id", activeIndex);
-    const text = details.find((cat) => cat.id === Data.index);
+    const text = Data.find((cat) => cat.id === Data.index);
 
-    console.log("details with image", text);
+    console.log("name of person", text.name);
 
     //setDetails(text);
   };
 
   return (
-    <div className=" !text-5xl text-red-700">
+    <div className=" !text-5xl text-red-700 my-5 text-center">
         <div  >
     Name:    {details.name}
       </div>
@@ -24,12 +24,13 @@ const Profiles = () => {
     ID:    {activeIndex}
     </div>
 
-      <div className="flex  justify-center items-center !mx-2">
+      <div className="flex  justify-center items-center !mx-3">
         {Data.map((item, index) => (
           <img
             key={index}
             src={item.image}
             onClick={() => handleClick(index)}
+            className="mx-5 my-5"
           />
         ))}
       </div>
