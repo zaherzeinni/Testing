@@ -52,7 +52,7 @@ const CategoryDropDown = () => {
           ))}
         </Select>
       </FormControl>
-
+{selectedParent &&
       <FormControl
         fullWidth
         sx={{ marginTop: "40px", marginBottom: "40px" }}
@@ -67,6 +67,7 @@ const CategoryDropDown = () => {
           ))}
         </Select>
       </FormControl>
+      }
     </Container>
   );
 };
