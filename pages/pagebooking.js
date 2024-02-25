@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Navbar1 from "../components/Navbar1";
 import Doctorinfo from '@/components/doctorinfo';
 import { NavbarMobile } from '@/components/NavbarMobile';
-import { useDisclosure } from '@chakra-ui/react';
+import { useDisclosure ,Box} from '@chakra-ui/react';
 
 const Pagebooking = () => {
 
@@ -13,8 +13,12 @@ const Pagebooking = () => {
 
     return (
         <div>
-           
+            
+           {/* display={{ base: '0px', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }} */}
+
+            
             <Navbar 
+            
             display={{ base: "none", md: "flex" }}
             />
            
