@@ -16,7 +16,7 @@ const Navbar = ({...rest}) => {
             <span className='hovergreen'>Home</span>
             <span className='hovergreen'>Patients</span>
             <span className='hovergreen'>Doctor-Dashboard</span>
-            <span className='hovergreen'>About Us</span>
+            <span className='hovergreen'>About Us</span> 
         </div>
 
            {/* -----------------Button-small logo - call---------- */}
