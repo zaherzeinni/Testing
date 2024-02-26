@@ -11,7 +11,7 @@ export default function Doctorinfo() {
   const theme = useTheme();
 
   return (
-    <div className=' flex w-[73.5%]  m-auto my-5 '>
+    <div className=' flex w-[73.5%] md:w-[68%] m-auto my-5 '>
     <Card sx={{ display: 'flex',minWidth:'100%',margin:'auto',justifyContent:'start', borderRadius:'10px 10px 10px 10px', }}>
       
     <CardMedia
