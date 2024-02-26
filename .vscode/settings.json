@@ -1,0 +1,6 @@
+{
+    "remote.otherPortsAttributes": {
+        "onAutoForward": "notify"
+    },
+    "remote.localPortHost": "allInterfaces"
+}

@@ -18,13 +18,13 @@ const Pagebooking = () => {
 
             
             <Navbar 
-            className="lg:visible invisible"
+            className="md:visible invisible"
             
             // display={{ base: "none", md: "flex" }}
             />
            
             <NavbarMobile
-            className="visible lg:invisible"
+            className="visible md:invisible"
             isOpen={isOpen}
             onToggle={onToggle}
             // display={{ base: "flex", md: "none" }}

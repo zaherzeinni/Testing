@@ -13,7 +13,7 @@ export const NavbarMobile = ({ isOpen, onToggle, ...rest }) => {
             onClick={onToggle}
             className="  hover:origin-center  hover:rotate-45 duration-1000  cursor-pointer mt-7  "
           />
-          <div className="flex flex-col justify-center text-center m-auto">
+          <div className="flex flex-col justify-center text-center m-auto ">
           <span>
             Home
           </span>

@@ -4,7 +4,7 @@ import { Flex } from '@chakra-ui/react';
 const Navbar = ({...rest}) => {
     return (
         <div {...rest}>
-        <div className='flex flex-row justify-center   md:space-x-60 space-x-28 mt-3 '>
+        <div className='flex flex-row justify-center   md:space-x-60 sm:space-x-28 mt-3 '>
             {/* --------------LOGO----------- */}
             <div >
            <img src='dentist-logo.jpg' alt='img'

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 
 
-const Test1dr = () => {
+const Doctorupdownpic = () => {
     return (
         <div className='flex h-[100vh] justify-center items-center'>
             <div>
@@ -26,4 +26,4 @@ const Test1dr = () => {
     );
 }
 
-export default Test1dr;
+export default Doctorupdownpic;
